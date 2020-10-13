@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DotnetLightsaberFight.Fighter
+﻿namespace DotnetLightsaberFight.Fighter
 {
     public class Yoda : AbstractFighter
     {
-        public Yoda() : base("Yoda")
+        public Yoda() : base("Yoda",
+            120,
+            new[] { Aim.Defense, Aim.Attack })
         {
         }
     }

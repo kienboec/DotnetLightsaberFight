@@ -1,33 +1,48 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DotnetLightsaberFight.Fighter
+﻿namespace DotnetLightsaberFight.Fighter
 {
     public abstract class AbstractFighter : IFighter
     {
-        public Lightsaber Lightsaber { get; private set; }
+        public string Name { get; }
+        public int Vitality { get; private set; }
+        public Lightsaber Lightsaber { get; }
+        
+        private int _currentAimIndex;
+        private readonly Aim[] _aims;
 
-        public AbstractFighter(String name)
+        protected AbstractFighter(string name, int vitality, Aim[] aims)
         {
-            // determine Lightsaber with color by name
+            this.Name = name; // even if only getter, in ctor this operation is possible
+            this.Vitality = vitality;
+            this._aims = aims;
+            this._currentAimIndex = 0;
 
-            if (name == "Yoda")
+            // determine Lightsaber with color by name
+            switch (name)
             {
-                Lightsaber = new Lightsaber(LightsaberColor.Blue);
+                case "Yoda":
+                    Lightsaber = new Lightsaber(LightsaberColor.Blue);
+                    break;
+                case "DarthVader":
+                    Lightsaber = new Lightsaber(LightsaberColor.Red);
+                    break;
+                case "Luke":
+                    Lightsaber = new Lightsaber(LightsaberColor.Green);
+                    break;
+                default:
+                    Lightsaber = new Lightsaber(LightsaberColor.Unknown);
+                    break;
             }
-            else if (name == "DarthVader")
-            {
-                Lightsaber = new Lightsaber(LightsaberColor.Red);
-            }
-            else if (name == "Luke")
-            {
-                Lightsaber = new Lightsaber(LightsaberColor.Green);
-            }
-            else
-            {
-                Lightsaber = new Lightsaber(LightsaberColor.Unknown);
-            }
+        }
+
+        public void ChangeVitality(int change)
+        {
+            Vitality += change;
+        }
+        public bool IsDead() => Vitality <= 0;
+        
+        public Aim NextAim()
+        {
+            return _aims[_currentAimIndex = (_currentAimIndex++) % _aims.Length];
         }
     }
 }

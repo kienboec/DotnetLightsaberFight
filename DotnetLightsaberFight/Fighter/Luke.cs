@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DotnetLightsaberFight.Fighter
+﻿namespace DotnetLightsaberFight.Fighter
 {
     public class Luke : AbstractFighter
     {
-        public Luke() : base("Luke")
+        public Luke() : base("Luke", 
+            80, 
+            new[] { Aim.Attack, Aim.Attack, Aim.Defense })
         {
         }
     }

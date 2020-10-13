@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DotnetLightsaberFight
+﻿namespace DotnetLightsaberFight
 {
     public class Lightsaber
     {
         public LightsaberColor Color { get; private set; }
+
+        public Lightsaber() : this(LightsaberColor.Unknown)
+        {
+        }
 
         public Lightsaber(LightsaberColor color)
         {

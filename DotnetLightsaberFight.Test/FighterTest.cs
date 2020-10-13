@@ -20,7 +20,7 @@ namespace DotnetLightsaberFight.Test
         }
 
         [Test]
-        public void testLukeHasGreenLightsaber()
+        public void TestLukeHasGreenLightsaber()
         {
             // Arrange
             IFighter fighter = new Luke();
@@ -33,7 +33,7 @@ namespace DotnetLightsaberFight.Test
         }
 
         [Test]
-        public void testDarthVaderHasRedLightsaber()
+        public void TestDarthVaderHasRedLightsaber()
         {
             // Arrange
             IFighter fighter = new DarthVader();
@@ -46,7 +46,7 @@ namespace DotnetLightsaberFight.Test
         }
 
         [Test]
-        public void testUnknownHasUnknownLightsaber()
+        public void TestUnknownHasUnknownLightsaber()
         {
             // Arrange
             IFighter fighter = new UnknownFighter();

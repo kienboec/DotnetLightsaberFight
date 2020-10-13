@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using DotnetLightsaberFight.Fighter;
+﻿using DotnetLightsaberFight.Fighter;
 
 namespace DotnetLightsaberFight.Test.Fighter
 {
     public class UnknownFighter : AbstractFighter
     {
-        public UnknownFighter() : base("unknown bladiblub-string")
+        public UnknownFighter() : base("unknown bladiblub-string", 1, new[] { Aim.Attack })
         {
         }
     }
