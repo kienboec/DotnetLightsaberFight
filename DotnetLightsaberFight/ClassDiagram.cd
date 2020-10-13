@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="DotnetLightsaberFight.Fighter.AbstractFighter">
+    <Position X="7" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAYAAIAAAAAAEAQAAAAAAAAAAAAAAAAQQAA=</HashCode>
+      <FileName>Fighter\AbstractFighter.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="_aims" />
+      <Property Name="Lightsaber" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="DotnetLightsaberFight.Fighter.DarthVader">
+    <Position X="9.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fighter\DarthVader.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotnetLightsaberFight.Fighter.Luke">
+    <Position X="5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fighter\Luke.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotnetLightsaberFight.Fighter.Yoda">
+    <Position X="7.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Fighter\Yoda.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotnetLightsaberFight.Combat">
+    <Position X="14.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgICAAAAAAIAAAAAAAAAAAAAAAAAAMgAAAAAAAAA=</HashCode>
+      <FileName>Combat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DotnetLightsaberFight.Lightsaber">
+    <Position X="4.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Lightsaber.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Color" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="DotnetLightsaberFight.Program">
+    <Position X="12" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="DotnetLightsaberFight.Fighter.IFighter" Collapsed="true">
+    <Position X="7" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAIAAIAAAAAAEAQAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Fighter\IFighter.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="DotnetLightsaberFight.Fighter.Aim" Collapsed="true">
+    <Position X="10" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Fighter\Aim.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="DotnetLightsaberFight.LightsaberColor" Collapsed="true">
+    <Position X="4.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAABAAABA=</HashCode>
+      <FileName>LightsaberColor.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

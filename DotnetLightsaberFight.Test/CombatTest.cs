@@ -11,15 +11,12 @@ namespace DotnetLightsaberFight.Test
         public void TestMove_Attack2Attack()
         {
             // arrange
-            var mockedA = new Mock<IFighter>();
-            var mockedB = new Mock<IFighter>();
-            
-            // Once created, a mock will remember all interactions.
-            // Then you can selectively verify whatever interactions you are interested in.
-            var combat = new Mock<Combat>(mockedA.Object, mockedB.Object);
+            var mockedA = new Mock<IFighter>(); // mock
+            var mockedB = new Mock<IFighter>(); // mock
+            var combat = new Combat(mockedA.Object, mockedB.Object); // no mock
 
             // act
-            combat.Object.GameMechanics(Aim.Attack, Aim.Attack);    // the game-mechs for one round is applied
+            combat.GameMechanics(Aim.Attack, Aim.Attack);    // the game-mechs for one round is applied
 
             // assert
             mockedA.Verify(mock => mock.ChangeVitality(-1), Times.Exactly(1));
