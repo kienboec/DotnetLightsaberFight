@@ -34,7 +34,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="DotnetLightsaberFight.Combat">
-    <Position X="14.75" Y="1.75" Width="1.5" />
+    <Position X="12.75" Y="4.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAgICAAAAAAIAAAAAAAAAAAAAAAAAAMgAAAAAAAAA=</HashCode>
       <FileName>Combat.cs</FileName>
@@ -64,7 +64,7 @@
       <FileName>Fighter\IFighter.cs</FileName>
     </TypeIdentifier>
   </Interface>
-  <Enum Name="DotnetLightsaberFight.Fighter.Aim" Collapsed="true">
+  <Enum Name="DotnetLightsaberFight.Fighter.Aim">
     <Position X="10" Y="4" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAKAAAAAAAAAAAgAAAAA=</HashCode>
@@ -72,7 +72,7 @@
     </TypeIdentifier>
   </Enum>
   <Enum Name="DotnetLightsaberFight.LightsaberColor" Collapsed="true">
-    <Position X="4.75" Y="2.5" Width="1.5" />
+    <Position X="4.75" Y="3.25" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAABAAABA=</HashCode>
       <FileName>LightsaberColor.cs</FileName>
